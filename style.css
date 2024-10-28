@@ -54,6 +54,9 @@ header {
 }
 
 .main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 112px;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -126,4 +129,79 @@ header {
 .portfolio-note span {
   color: var(--white);
   font-style: bold;
+}
+
+/* Quote */
+.quote {
+  position: relative;
+  text-align: center;
+  border: 1px solid var(--gray);
+  margin: 0 auto;
+}
+
+.quote blockquote {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  padding: 32px;
+}
+
+.quote blockquote::before,
+.quote blockquote::after {
+  content: '"';
+  position: absolute;
+  color: var(--gray);
+  font-style: italic;
+  font-size: 56px;
+  font-weight: bold;
+  background-image: linear-gradient(var(--background), var(--background));
+  background-size: 100% 45%;
+  background-repeat: no-repeat;
+}
+
+.quote blockquote::before {
+  top: -20px;
+  left: 20px;
+}
+
+.quote blockquote::after {
+  top: 76px;
+  right: 20px;
+}
+
+.quote figcaption {
+  color: var(--white);
+  font-size: 24px;
+  border: 1px solid var(--gray);
+  padding: 16px;
+  right: -1px;
+  position: absolute;
+  border-top: none;
+}
+
+/* Social links */
+.social-links {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 17px;
+  gap: 8px;
+}
+.social-links-line {
+  width: 1px;
+  height: 191px;
+  background-color: var(--gray);
+}
+
+.social-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
