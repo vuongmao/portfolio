@@ -595,3 +595,30 @@ footer {
     padding: 0 16px;
   }
 }
+
+/* project html */
+.page-section-header {
+  margin-top: 53px;
+}
+
+.page-section-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-section-header h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.page-section-header h2::before {
+  content: "/";
+  color: var(--primary);
+}
+
+.complete-projects,
+.small-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
